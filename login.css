@@ -1,0 +1,127 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-image: url("./login1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+section {
+  position: relative;
+  max-width: 400px;
+  background-color: rgba(220, 30, 30, 0.2);
+  border: 2px solid rgba(96, 114, 229, 0.621);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  backdrop-filter: blur(30px);
+  padding: 20px 30px;
+  border-radius: 20px;
+}
+h1 {
+  font-size: 20px;
+  color: black;
+  text-align: center;
+}
+.input {
+  position: relative;
+  padding: 30px 0;
+  max-width: 300px;
+  border-bottom: 2px solid #dc3737;
+}
+.input label {
+  color: black;
+  position: relative;
+  top: 50%;
+  left: 4px;
+  transform: translateY(-50%);
+  font-size: 19px;
+  pointer-events: none;
+  transition: all 0.5s ease-in-out;
+}
+input:focus ~ label,
+input:valid ~ label {
+  top: -5px;
+  color: rgb(195, 26, 136);
+}
+.input input {
+  width: 100%;
+  height: 70px;
+  background: transparent;
+  border: none;
+  border-radius: 10px;
+  outline: none;
+  font-size: 13px;
+  padding: 0 25px 0 5px;
+  color: black;
+}
+.rem {
+  margin: 25px 0;
+  color: black;
+  display: flex;
+  justify-content: space-between;
+}
+.rem label {
+  display: flex;
+  align-items: center;
+}
+.rem label input {
+  margin-right: 3px;
+}
+.rem a {
+  color: black;
+  text-decoration: none;
+  font-weight: bold;
+}
+button {
+  width: 100%;
+  height: 40px;
+  border-radius: 40px;
+  background-color: #b42d2dc1;
+  cursor: pointer;
+  outline: navajowhite;
+  border: none;
+  font-size: 17px;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+button:hover {
+  background-color: #27cd3b;
+}
+button a {
+  text-decoration: none;
+  color: black;
+}
+button a:hover {
+  color: white;
+}
+.reg {
+  text-decoration: none;
+  color: black;
+  text-align: center;
+  margin: 20px;
+}
+.reg p a :hover {
+  text-decoration: underline;
+  color: yellow;
+}
+.reg p a {
+  text-decoration: none;
+  color: black;
+}
+@media screen and (max-width: 750px) {
+  section {
+    max-width: 90%;
+  }
+}
